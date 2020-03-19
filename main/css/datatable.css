@@ -16,11 +16,11 @@
 }
 /* resize column table */
 table thead tr th.resizing {
-    cursor: col-resize;
+    background-color: #d7d6ee;
 }
 
-th {
-    cursor: col-resize;
+table thead tr th:not(:last-child) {
+    cursor: ew-resize;
 }
 
 th {
