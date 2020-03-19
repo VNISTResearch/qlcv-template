@@ -108,6 +108,12 @@ table.table td i {
     font-size: 19px;
 }
 
+table.table td i.text-success, table.table td i.text-danger {
+    font-size: 1em;
+    text-align: center;
+    margin-right: 0.5em;
+}
+
 /* table.table td a.add i {
     font-size: 24px;
     margin-right: -1px;
