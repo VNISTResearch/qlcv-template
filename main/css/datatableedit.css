@@ -111,7 +111,7 @@ table.table td i {
 table.table td i.text-success, table.table td i.text-danger {
     font-size: 1em;
     text-align: center;
-    margin-right: 0.5em;
+    margin-right: 0.25em;
 }
 
 /* table.table td a.add i {
