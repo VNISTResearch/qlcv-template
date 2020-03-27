@@ -29,6 +29,10 @@ th {
     overflow: hidden;
 }
 
+td {
+    word-wrap: break-word;
+}
+
 .task-table td:not(:last-child) {
     text-overflow: ellipsis;
     white-space: nowrap;
