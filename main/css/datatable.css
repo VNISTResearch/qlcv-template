@@ -137,75 +137,7 @@ tbody#actions td:not(:last-child) {
     background: none;
 }
 
-#setting-table {
-    z-index: 1000;
-    position: absolute;
-    right: 30px;
-    width: 21%;
-    background-color: rgb(249, 250, 252);
-    padding: 15px;
-    border: 1px solid black;
-    margin-top: 5px;
-    /* border-radius: 15px; */
-}
-#setting-table fieldset{
-    background-color: #f9fafc;
-}
 
-#setting-table fieldset .update{
-    margin-top: 10px;
-}
-
-#setting-table fieldset .update button{
-    margin-left: 12px;
-}
-
-#setting-table input.form-control {
-    display: inline;
-    width: 47%;
-}
-
-.setting-table button {
-    border: none;
-    width: 4%;
-    background: none;
-}
-
-.setting-table button:hover{
-    background: none;
-}
-
-.setting-table button:hover{
-    background: none;
-}
-
-.setting-table button.btn-default:active{
-    border: none;
-    background: none;
-}
-
-/* collapse */
-.pop-arw {
-    width: 13px!important;
-    height: 13px!important;
-    background-color: #f9fafc;
-    border: black solid 1px;
-    position: absolute;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-}
-
-.arwTop {
-    border-right: 0;
-    border-bottom: 0;
-    top: -7px;
-    left: 50%;
-}
-
-.L-auto {
-    left: auto!important;
-}
 
 .R10 {
     right: 33px!important;
