@@ -11,11 +11,14 @@ $(function () {
             $columnName = $row.find('td[data-column="name"]'),
             children = $table.find('tr[data-parent="' + id + '"]')
             tagSpan = $columnName.find("span").length;
-        if (children.length && tagSpan<2) {
-            var expander = $columnName.prepend('' +
-                '<span class="treegrid-expander glyphicon glyphicon-chevron-right"></span>' +
-                '');
-            expander.addClass("glyphicon-chevron-right");
+
+            
+        var div = $("<div/>").attr({"style": "display: inline-block; margin-left: " +  (15 + 30 * (level-1)) + "px"}).html($columnName.text());
+        if (children.length){
+            var expander = $('<span />').attr('class', 'treegrid-expander glyphicon glyphicon-chevron-right').html('');
+            div.prepend(expander);
+
+
             children.hide();
 
             expander.on('click', function (e) {
@@ -36,10 +39,8 @@ $(function () {
                 }
             });
         }
-
-        if(tagSpan<1)$columnName.prepend('' +
-            '<span class="treegrid-indent" style="width:' + 15 * level + 'px"></span>' +
-            '');
+        $columnName.html('');
+        $columnName.append(div);
     });
 
     // Reverse hide all elements
@@ -62,8 +63,9 @@ $(function () {
             children.hide();
         }
     };
-     // Reverse show all elements
-     reverseShow = function (table, element) {
+    
+    // Reverse show all elements
+    reverseShow = function (table, element) {
         var
             $element = $(element),
             id = $element.data('id'),
@@ -83,7 +85,3 @@ $(function () {
         }
     };
 });
-
-// $('#myModalHorizontal').on('hidden.bs.modal', function () {
-//     window.location.reload();
-//    })
